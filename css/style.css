@@ -1209,7 +1209,7 @@ opacity: 0;
 
 .histoire{
   width: 60%;
-  min-height: 19%;
+  min-height: 22%;
   line-height:30px;
   display:flex;
   position: absolute;
@@ -1223,16 +1223,16 @@ opacity: 0;
 }
 
 .image-histoire{
-    width: 325px;
+    width: 400px;
     height: 215px;
     margin-left: 1325px;
-    margin-top: -145px;
+    margin-top: -142px;
+    border-radius: 10px;
+    
 }
 
-
-
 .histoire2{
-    width: 60%;
+    width: 65%;
     min-height: 19%;
     line-height:30px;
     display:flex;
@@ -1247,9 +1247,10 @@ opacity: 0;
 }
 
 .imageos{
-    width: 270px;
-    height: 170px;
-    margin-left: -1500px;
-    margin-top: 380px;
+    width: 320px;
+    height: 185px;
+    margin-left: -1562px;
+    margin-top: 376px;
+    border-radius: 10px;
 }
 
