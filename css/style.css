@@ -1,0 +1,1126 @@
+*{
+  margin:0;
+  padding:0;
+  } 
+
+ main,header {
+  display: flex;
+  /* tous les éléments immédiatement inclus dans main sont impactés*/
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: auto;
+}
+
+main div {
+  min-width: 120px;
+  /* on attribue une largeur et une hauteur minimum à tous les div contenus dans main */
+  min-height: 120px;
+}
+
+body {
+  place-items: center;
+  font-family: 'Ubuntu', sans-serif;
+  color: var(--clr-neon);
+  background-image: linear-gradient(to left,	#F0FFF0, #7FFFD4);
+  position: absolute;
+   top: 0; bottom: 0; left: 0; right: 0;
+   height: 100%;
+   margin:0;
+   padding:0;
+   background-size: 100% ;
+   width:100%;  
+   color:black;
+   
+
+}
+
+body:before {
+     content: "";
+     position: fixed;
+     height: 100%; width: 100%;
+     background: url('https://img.besthqwallpapers.com/Uploads/15-12-2019/116067/linux-green-logo-4k-green-brickwall-linux-logo-creative.jpg');
+     background-size: cover;
+     z-index: -1; /* Keep the background behind the content */     
+    -webkit-filter: blur(8px);
+   -webkit-background-size: cover; /* pour Chrome et Safari */
+   -moz-background-size: cover; /* pour Firefox */
+   -o-background-size: cover; /* pour Opera */
+   background-size: cover; /* version standardisée */
+  }
+
+nav {
+ display: flex;
+  /* tous les éléments immédiatement inclus dans main sont impactés*/
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+  block-size:50px;   
+}
+
+
+
+
+:root {
+  --clr-neon: hsl(120, 61%, 50%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+.header {
+  width: 35%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 125px;
+  color: white;
+  margin: auto;
+  font-size:50px;
+  text-decoration: none;
+  background: linear-gradient(to right, rgb(164, 231, 194) 50%, #69e715 50%, #08e99e);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s ease-out;
+}
+
+.header:hover {
+ background-position: -100%;
+}
+
+.contenu {
+  width: 45%;
+  background-color: #445;
+  margin: 20px
+}
+
+.contgen {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+.icones {
+  width: 100%;
+  background-color: #bbe33d;
+}
+
+.article {
+  width: 30%;
+  margin: 20px 10px 20px 0;
+  background-color: rgb(114, 159, 207);
+}
+
+
+.neon-button {
+  font-size: 1rem;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--clr-neon);
+  border: var(--clr-neon) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+
+
+  position: relative;
+  
+  
+}
+
+.neon-button::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--clr-neon);
+  top: 120%;
+  left: 0;
+  width: 0%;
+  height: 0%;
+
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7;
+  
+}
+
+.neon-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-neon);
+  opacity: 0;
+  background-color: var(--clr-neon);
+  z-index: -1;
+  transition: opacity 100ms linear;
+}
+
+.neon-button:hover,
+.neon-button:focus {
+  color: var(--clr-bg);
+  text-shadow: none;
+}
+.neon-button:hover::before,
+.neon-button:focus::before {
+  opacity: 1;
+}
+
+.neon-button:hover::after,
+.neon-button:focus::after {
+  opacity: 1;
+}
+
+
+
+.mm {
+  display: flex;
+  /* Transformation en flexbox */
+  padding: 0;
+  /* Suppression des marges internes */
+}
+
+.mm li {
+  list-style-type: none;
+  /* Suppression des puces */
+}
+
+.mm a {
+  display: block;
+  /* Transformation en block */
+  min-width: 120px;
+  /* Largeur minimale des liens */
+}
+
+.mm a {
+  display: block;
+  /* Transformation en block */
+  min-width: 120px;
+  /* Largeur minimale des liens */
+
+  margin: 0.5rem;
+  /* Marges externes (1 valeurs = 4 directions) */
+  padding: 0.4rem 0;
+  /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+  text-align: center;
+  /* Centrage du texte */
+  text-decoration: none;
+  /* Suppression du soulignement */
+  border: 1.5px solid #fff;
+  /* Ajout d'une bordure */
+  border-radius: 4px;
+  /* Arrondis des bordures */
+}
+
+.mm {
+  display: flex;
+  /* Transformation en flexbox */
+  flex-flow: row wrap;
+  padding: 0;
+  /* Suppression des marges internes */
+  background-color: transparent;
+  /* Ajout de la couleur d'arrière-plan */
+  justify-content: space-around
+    /* Alignements des liens dans le menu */
+}
+
+.mm a:hover {
+  background-color: #32CD32;
+  /* couleur du fond */
+  color: black;
+  /* couleur du texte */
+  border-color: #008000;
+}
+
+
+.exept {
+  display: flex;
+  /* Transformation en flexbox */
+  padding: 0;
+  /* Suppression des marges internes */
+  background-color: transparent;
+  /* Ajout de la couleur d'arrière-plan */
+  justify-content: space-around;
+  /* Alignements des liens dans le menu */
+}
+
+.exept {
+  display: flex;
+  /* Transformation en flexbox */
+  padding: 0;
+  /* Suppression des marges internes */
+}
+
+.exept li {
+  list-style-type: none;
+  /* Suppression des puces */
+}
+
+.exept a {
+  display: block;
+  /* Transformation en block */
+  min-width: 120px;
+  /* Largeur minimale des liens */
+}
+
+.exept a {
+  display: block;
+  /* Transformation en block */
+  min-width: 120px;
+  /* Largeur minimale des liens */
+
+  margin: 0.5rem;
+  /* Marges externes (1 valeurs = 4 directions) */
+  padding: 0.4rem 0;
+  /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+  text-align: center;
+  /* Centrage du texte */
+  text-decoration: none;
+  /* Suppression du soulignement */
+}
+
+.exept {
+  display: flex;
+  /* Transformation en flexbox */
+  flex-flow: row wrap;
+  padding: 0;
+  /* Suppression des marges internes */
+  background-color: transparent;
+  /* Ajout de la couleur d'arrière-plan */
+  justify-content: space-around
+    /* Alignements des liens dans le menu */
+}
+
+.exept a:hover {
+  color: black;
+  /* couleur du texte */
+  border-color: #008000;
+}
+
+.coloricon {
+  color:hsl(120, 61%, 50%)
+}
+
+.intro{
+  width: 60%;
+  min-height: 19%;
+  line-height:30px;
+  display:flex;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: larger;
+  top:36%;
+  text-shadow:0 0 30px #32CD32,5px 9px 5px rgba(0, 0, 0, 0.5), 0 0 150px #32CD32;color:white;
+  background-color: rgb(0,0,0,.4);
+  border-radius: 10px;
+}
+
+.introsuite{
+  width: 60%;
+  min-height: 16%;
+  line-height:30px;
+  display:flex;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: larger;
+  top:550px;
+  text-shadow:0 0 30px #32CD32,5px 9px 5px rgba(0, 0, 0, 0.5), 0 0 150px #32CD32;color:white;
+  background-color: rgb(0,0,0,.4);
+  border-radius: 10px;
+}
+
+span.hidespace{
+  opacity: 0;
+}
+
+.introfin{
+  width: 60%;
+  min-height: 10%;
+  line-height:30px;
+  display:flex;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: larger;
+  top:725px;
+  text-shadow:0 0 30px #32CD32,5px 9px 5px rgba(0, 0, 0, 0.5), 0 0 150px #32CD32;color:white;
+  background-color: rgb(0,0,0,.4);
+  border-radius: 10px;
+}
+
+
+
+.introouv{
+  width: 60%;
+  min-height: 10%;
+  line-height:30px;
+  display:flex;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: larger;
+  top:840px;
+  text-shadow:0 0 30px #32CD32,5px 9px 5px rgba(0, 0, 0, 0.5), 0 0 150px #32CD32;color:white;
+  background-color: rgb(0,0,0,.4);
+  border-radius: 10px;
+}
+
+
+.space1{
+  position: absolute;
+  top:50%;
+  width: 1px;
+  height:1000px;
+  min-height: 35px;
+  font-size:30px;
+  left: 1px;
+}
+
+.space2{
+  position: absolute;
+  top:50%;
+  width: 1px;
+  height:2000px;
+  min-height: 35px;
+  font-size:30px;
+  left: 1px;
+}
+
+.videolinux{
+  top:1000px;
+}
+
+
+
+.effetneonbienvenue {
+  color: #fff;
+      text-shadow:  0 0 7px #32CD32, 
+               0 0 10px #fff, 
+               0 0 42px #32CD32,   
+               0 0 77px #32CD32, 
+               0 0 100px #32CD32;
+}
+
+.containerbienvenue {
+
+  position: absolute;
+  top:25%;
+  height:2px;
+  min-height: 50px;
+  min-width: 900px;
+  text-align: center;
+  border-radius: 30px;
+  color:white;
+  font-size:40px;
+  vertical-align: middle;
+}
+
+.videolinux {
+  width: 35%;
+  height: 350px;
+  display:flex;
+  background-color: rgb(0,0,0,.4);
+  border-radius: 10px;
+  margin-top: 47%;
+  vertical-align: middle;
+  align-items: center;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Page téléchargements */
+
+.telecharge{
+  font-family: 'Ubuntu', sans-serif;
+  margin-left:auto;
+  width: 70%;
+  min-height: 50%;
+  line-height:30px;
+  display:flex;
+  position: absolute;
+  text-align: center;
+  font-size: xx-large;
+  top:36%;
+  text-shadow:0 0 30px #32CD32,5px 9px 5px rgba(0, 0, 0, 0.5), 0 0 150px #32CD32;color:white;
+  background-color: rgb(0,0,0,.4);
+  border-radius: 10px;
+}
+
+/* Body modifié pour cette page */
+
+
+.bodytwo{
+  display: flex;
+  width: 100%;
+  /*flex-direction: column;*/
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color:black;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  animation: fadeIn .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1;
+}
+
+
+
+
+
+/*Codes Cartes css téléchargements */
+
+
+/* Universel */
+
+
+h1,h2{
+  margin: 0;
+  font-size: 38px;
+  letter-spacing: -.25px;
+  transform: translateX(-44px);
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  text-align: left;
+  padding-left: 40px;
+  
+
+}
+
+h2{
+  font-size: 30px;
+  margin-top: -70px;
+  transform: translateX(-34px);
+}
+
+p{
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+span{
+  margin-left: 13px;
+  opacity: .55;
+}
+
+img{
+  transform-origin: top right;
+  transition: transform 300ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  transition-delay: 100ms;
+  transform: translateX(21%) rotateZ(13deg) skewX(3deg);
+  pointer-events: none;
+  width: 200px;
+	height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Carte Ubuntu */
+
+
+.wrapper{
+  font-family: 'Ubuntu', sans-serif;
+  width: 750px;
+  height: 1000px;
+  margin-top:900px;
+  perspective: 800px;
+  position: relative;
+  margin-left: 100px;
+}
+
+.card{
+  width: 320px;
+  height: 450px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-140px);
+  transition: transform 350ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  cursor: pointer;
+}
+
+.card > div{
+  position: absolute;
+  width: 320px;
+  height: 450px;
+  padding: 34px 21px;
+  transition: all 350ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+}
+
+.front{
+  background-image: linear-gradient(180deg, rgb(240, 88, 33) 0%, rgba(255, 187, 0, 0) 100%);
+  transform: rotateY(0deg) translateZ(160px); 
+  border-radius: 34px 3px 0 0;
+}
+
+.right{ 
+  background-image: linear-gradient(0deg, rgb(240, 88, 33) 0%, rgba(92,91,94,0) 100%);
+  opacity: 0.08;
+  transform: rotateY(90deg) translateZ(160px);
+  border-radius: 0 0 3px 34px;
+}
+
+.card:hover{
+  transform: translateZ(-160px) rotateY( -90deg);
+}
+
+.card:hover .front{
+  opacity: 0; 
+}
+
+.card:hover .right{
+  opacity: 1; 
+}
+
+
+.img-wrapper{
+  animation: float 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate;
+  position: absolute;
+  top: 175px; right: 400px;
+  pointer-events: none;
+  backface-visibility: hidden;
+}
+
+@keyframes float{
+  0%{
+    transform: translateZ(20px);
+  }
+  100%{
+    transform: translateY(-21px) translateX(-13px) translateZ(30px);
+  }
+}
+
+.card:hover ~ .img-wrapper img{
+  transform: scale(0.9) translateX(77%) translateY(90%) rotateZ(80deg);
+}
+
+.ulub{
+  margin-left: 21px;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 300;
+  list-style: none;
+}
+
+.licard{
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.licard:before{
+  content: 'x';
+  position: absolute;
+  left: -21px;
+}
+
+.buttonub{
+  position: absolute;
+  right: 21px; 
+  bottom: 34px;
+  border: none;
+  box-shadow: none;
+  background: none;
+  color: inherit;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 15px;  
+  letter-spacing: -.25px;
+  font-weight: 700;
+  padding: 13px 34px;
+  border-radius: 55px 55px 21px 55px;
+  background-image: linear-gradient(130deg, rgb(240, 88, 33)  50%, rgba(51,46,57,.89) 100%);
+  background-size: 125% 100%;
+  background-position: right;
+  cursor: pointer;
+  box-shadow: 8px 5px 13px rgb(0, 0, 0);
+  transform: scale(0) skewY(13deg);
+  transition: all 150ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  transform-origin: right bottom;
+}
+
+.card:hover button{
+   transform: scale(1) skewY(0);
+}
+
+.card:not(:hover) button{
+opacity: 0;
+}
+
+.buttonub:hover{
+  background-position: left;
+}
+
+.price{
+  position: absolute;
+  bottom: 34px;
+  left: 21px;
+  font-size: 34px;
+  opacity: .34;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0.33;
+    transform: scale(.89);
+  }
+}
+
+@media only screen and (max-width: 600px){
+  body{
+    transform: scale(.67);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Carte Linux Mint */
+
+
+.wrapper1{
+  font-family: 'Ubuntu', sans-serif;
+  width: 750px;
+  height: 1000px;
+  margin-top:900px;
+  perspective: 800px;
+  position: relative;
+  left: 100px;
+}
+
+.card1{
+  width: 320px;
+  height: 450px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-140px);
+  transition: transform 350ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  cursor: pointer;
+}
+
+.card1 > div{
+  position: absolute;
+  width: 320px;
+  height: 450px;
+  padding: 34px 21px;
+  transition: all 350ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+}
+
+.front1{
+  background-image: linear-gradient(180deg, rgb(34,139,34) 0%, rgba(255, 187, 0, 0) 100%);
+  opacity:1;
+  transform: rotateY(0deg) translateZ(160px); 
+  border-radius: 34px 3px 0 0;
+}
+
+.right1{ 
+  background-image: linear-gradient(0deg, rgb(34,139,34) 0%, rgba(92,91,94,0) 100%);
+  opacity: 0.08;
+  transform: rotateY(90deg) translateZ(160px);
+  border-radius: 0 0 3px 34px;
+}
+
+.card1:hover{
+  transform: translateZ(-160px) rotateY( -90deg);
+}
+
+.card1:hover .front1{
+  opacity: 0; 
+}
+
+.card1:hover .right1{
+  opacity: 1; 
+}
+
+
+
+.img-wrapper1{
+  animation: float 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate;
+  position: absolute;
+  top: 175px; right: 400px;
+  pointer-events: none;
+  backface-visibility: hidden;
+}
+
+@keyframes float{
+  0%{
+    transform: translateZ(20px);
+  }
+  100%{
+    transform: translateY(-21px) translateX(-13px) translateZ(30px);
+  }
+}
+
+.card1:hover ~ .img-wrapper1 img{
+  transform: scale(0.9) translateX(77%) translateY(90%) rotateZ(80deg);
+}
+
+.ul1{
+  margin-left: 21px;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 300;
+  list-style: none;
+}
+
+.licard1{
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.licard1:before{
+  content: 'x';
+  position: absolute;
+  left: -21px;
+}
+
+.button1{
+  position: absolute;
+  right: 21px; 
+  bottom: 34px;
+  border: none;
+  box-shadow: none;
+  background: none;
+  color: inherit;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 15px;  
+  letter-spacing: -.25px;
+  font-weight: 700;
+  padding: 13px 34px;
+  border-radius: 55px 55px 21px 55px;
+  background-image: linear-gradient(130deg, rgb(34,139,34)  50%, rgba(51,46,57,.89) 100%);
+  background-size: 125% 100%;
+  background-position: right;
+  cursor: pointer;
+  box-shadow: 8px 5px 13px rgb(0, 0, 0);
+  transform: scale(0) skewY(13deg);
+  transition: all 150ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  transform-origin: right bottom;
+}
+
+.card1:hover button{
+   transform: scale(1) skewY(0);
+}
+
+.card1:not(:hover) button{
+opacity: 0;
+}
+
+.button1:hover{
+  background-position: left;
+}
+
+.price1{
+  position: absolute;
+  bottom: 34px;
+  left: 21px;
+  font-size: 34px;
+  opacity: .34;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0.33;
+    transform: scale(.89);
+  }
+}
+
+@media only screen and (max-width: 600px){
+  body{
+    transform: scale(.67);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Carte Debian */
+
+
+.wrapper2{
+  font-family: 'Ubuntu', sans-serif;
+  width: 750px;
+  height: 1000px;
+  margin-top:900px;
+  perspective: 800px;
+  position: relative;
+  left: 200px;
+}
+
+.card2{
+  width: 320px;
+  height: 450px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-140px);
+  transition: transform 350ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  cursor: pointer;
+}
+
+.card2 > div{
+  position: absolute;
+  width: 320px;
+  height: 450px;
+  padding: 34px 21px;
+  transition: all 350ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+}
+
+.front2{
+  background-image: linear-gradient(180deg, rgb(255,20,147) 0%, rgba(255, 187, 0, 0) 100%);
+  transform: rotateY(0deg) translateZ(160px); 
+  border-radius: 34px 3px 0 0;
+}
+
+.right2{ 
+  background-image: linear-gradient(0deg, rgb(255,20,147) 0%, rgba(92,91,94,0) 100%);
+  opacity: 0.08;
+  transform: rotateY(90deg) translateZ(160px);
+  border-radius: 0 0 3px 34px;
+}
+
+.card2:hover{
+  transform: translateZ(-160px) rotateY( -90deg);
+}
+
+.card2:hover .front2{
+  opacity: 0; 
+}
+
+.card2:hover .right2{
+  opacity: 1; 
+}
+
+
+.img-wrapper2{
+  animation: float 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate;
+  position: absolute;
+  top: 175px; right: 400px;
+  pointer-events: none;
+  backface-visibility: hidden;
+}
+
+@keyframes float{
+  0%{
+    transform: translateZ(20px);
+  }
+  100%{
+    transform: translateY(-21px) translateX(-13px) translateZ(30px);
+  }
+}
+
+.card2:hover ~ .img-wrapper2 img{
+  transform: scale(0.9) translateX(77%) translateY(90%) rotateZ(80deg);
+}
+
+.ul2{
+  margin-left: 21px;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 300;
+  list-style: none;
+}
+
+.licard2{
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.licard2:before{
+  content: 'x';
+  position: absolute;
+  left: -21px;
+}
+
+.button2{
+  position: absolute;
+  right: 21px; 
+  bottom: 34px;
+  border: none;
+  box-shadow: none;
+  background: none;
+  color: inherit;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 15px;  
+  letter-spacing: -.25px;
+  font-weight: 700;
+  padding: 13px 34px;
+  border-radius: 55px 55px 21px 55px;
+  background-image: linear-gradient(130deg, rgb(255,20,147)  50%, rgba(51,46,57,.89) 100%);
+  background-size: 125% 100%;
+  background-position: right;
+  cursor: pointer;
+  box-shadow: 8px 5px 13px rgb(0, 0, 0);
+  transform: scale(0) skewY(13deg);
+  transition: all 150ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  transform-origin: right bottom;
+}
+
+.card2:hover button{
+   transform: scale(1) skewY(0);
+}
+
+.card2:not(:hover) button{
+opacity: 0;
+}
+
+.button2:hover{
+  background-position: left;
+}
+
+.price2{
+  position: absolute;
+  bottom: 34px;
+  left: 21px;
+  font-size: 34px;
+  opacity: .34;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0.33;
+    transform: scale(.89);
+  }
+}
+
+@media only screen and (max-width: 600px){
+  body{
+    transform: scale(.67);
+  }
+}
+
+
+
+.debianpng{
+  transform-origin: top right;
+  transition: transform 300ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  transition-delay: 100ms;
+  transform: translateX(21%) rotateZ(13deg) skewX(3deg);
+  pointer-events: none;
+  width: 175px;
+	height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footertext{
+  background-color: rgb(34,139,34,.4);
+  position:absolute;
+  bottom: -700px;
+  width:100%;
+  padding-top:50px;
+  height:125px;
+  display:flex;
+  font-size: larger;
+  text-shadow:0 0 2px #00e92c,0 0 30px #00e92c,0px 0px 5px #00e92c, 0 0 150px #00e92c;color:#00e92c;
+  }
+
+
+
+
+  .lienlinux{
+  text-decoration: none;
+  color:0 0 30px #32CD32,5px 9px 5px rgba(0, 0, 0, 0.5), 0 0 150px #32CD32;color:white;
+}
+
+.lienlinux:hover{
+  color: #08e99e;
+}
+
+
+
+
+
+
+
+
