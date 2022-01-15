@@ -400,7 +400,7 @@ span.hidespace{
   position: absolute;
   top:50%;
   width: 1px;
-  height:2000px;
+  height:100px;
   min-height: 35px;
   font-size:30px;
   left: 1px;
@@ -477,19 +477,73 @@ span.hidespace{
 
 .telecharge{
   font-family: 'Ubuntu', sans-serif;
-  margin-left:auto;
-  width: 70%;
-  min-height: 50%;
+  min-height: 15.5%;
   line-height:30px;
   display:flex;
   position: absolute;
+  top:23%;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  font-size: xx-large;
-  top:36%;
+  vertical-align: middle;
+  font-size: larger;
   text-shadow:0 0 30px #32CD32,5px 9px 5px rgba(0, 0, 0, 0.5), 0 0 150px #32CD32;color:white;
   background-color: rgb(0,0,0,.4);
   border-radius: 10px;
 }
+
+.telecharge2{
+  font-family: 'Ubuntu', sans-serif;
+  margin-left:auto;
+  width: 60%;
+  min-height: 12.5%;
+  line-height:30px;
+  display:flex;
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  font-size: larger;
+  top:41%;
+  text-shadow:0 0 30px #32CD32,5px 9px 5px rgba(0, 0, 0, 0.5), 0 0 150px #32CD32;color:white;
+  background-color: rgb(0,0,0,.4);
+  border-radius: 10px;
+}
+
+.telecharge3{
+  font-family: 'Ubuntu', sans-serif;
+  margin-left:auto;
+  width: 60%;
+  min-height: 12.5%;
+  line-height:30px;
+  display:flex;
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  font-size: larger;
+  top:56%;
+  text-shadow:0 0 30px #32CD32,5px 9px 5px rgba(0, 0, 0, 0.5), 0 0 150px #32CD32;color:white;
+  background-color: rgb(0,0,0,.4);
+  border-radius: 10px;
+}
+
+.telecharge4{
+  font-family: 'Ubuntu', sans-serif;
+  margin-left:auto;
+  width: 60%;
+  min-height: 19%;
+  line-height:30px;
+  display:flex;
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  font-size: larger;
+  top:71%;
+  text-shadow:0 0 30px #32CD32,5px 9px 5px rgba(0, 0, 0, 0.5), 0 0 150px #32CD32;color:white;
+  background-color: rgb(0,0,0,.4);
+  border-radius: 10px;
+}
+
 
 /* Body modifié pour cette page */
 
@@ -505,7 +559,6 @@ span.hidespace{
   overflow: hidden;
   color:black;
   font-family: 'Ubuntu', sans-serif;
-  font-weight: 500;
   animation: fadeIn .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1;
 }
 
@@ -1093,7 +1146,7 @@ opacity: 0;
 
 
 
-.footertext{
+.footertext1{
   background-color: rgb(34,139,34,.4);
   position:absolute;
   bottom: -700px;
@@ -1103,20 +1156,42 @@ opacity: 0;
   display:flex;
   font-size: larger;
   text-shadow:0 0 2px #00e92c,0 0 30px #00e92c,0px 0px 5px #00e92c, 0 0 150px #00e92c;color:#00e92c;
-  }
+}
+
+.footertext2{
+  background-color: rgb(34,139,34,.4);
+  position:absolute;
+  bottom: -700px;
+  width:100%;
+  padding-top:50px;
+  height:125px;
+  display:flex;
+  font-size: larger;
+  text-shadow:0 0 2px #00e92c,0 0 30px #00e92c,0px 0px 5px #00e92c, 0 0 150px #00e92c;color:#00e92c;
+}
+
+.footertext3{
+  background-color: rgb(34,139,34,.4);
+  position:absolute;
+  margin-bottom:0;
+  width:100%;
+  padding-top:50px;
+  height:125px;
+  display:flex;
+  font-size: larger;
+  text-shadow:0 0 2px #00e92c,0 0 30px #00e92c,0px 0px 5px #00e92c, 0 0 150px #00e92c;color:#00e92c;
+}
 
 
 
-
-  .lienlinux{
+.lienlinux{
   text-decoration: none;
   color:0 0 30px #32CD32,5px 9px 5px rgba(0, 0, 0, 0.5), 0 0 150px #32CD32;color:white;
 }
-
+  
 .lienlinux:hover{
   color: #08e99e;
 }
-
 
 
 
