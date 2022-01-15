@@ -602,16 +602,26 @@ span{
   opacity: .55;
 }
 
-img{
+.ubuntupng{
   transform-origin: top right;
   transition: transform 300ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
   transition-delay: 100ms;
   transform: translateX(21%) rotateZ(13deg) skewX(3deg);
   pointer-events: none;
   width: 200px;
-	height: 200px;
+    height: 200px;
 }
 
+
+.linuxpng{
+  transform-origin: top right;
+  transition: transform 300ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  transition-delay: 100ms;
+  transform: translateX(21%) rotateZ(13deg) skewX(3deg);
+  pointer-events: none;
+  width: 200px;
+    height: 200px;
+}
 
 
 
@@ -1197,5 +1207,49 @@ opacity: 0;
 
 
 
+.histoire{
+  width: 60%;
+  min-height: 19%;
+  line-height:30px;
+  display:flex;
+  position: absolute;
+  margin-left: -400px;
+  text-align: center;
+  font-size: larger;
+  top:250px;
+  text-shadow:0 0 30px #32CD32,5px 9px 5px rgba(0, 0, 0, 0.5), 0 0 150px #32CD32;color:white;
+  background-color: rgb(0,0,0,.4);
+  border-radius: 10px;
+}
 
+.image-histoire{
+    width: 325px;
+    height: 215px;
+    margin-left: 1325px;
+    margin-top: -145px;
+}
+
+
+
+.histoire2{
+    width: 60%;
+    min-height: 19%;
+    line-height:30px;
+    display:flex;
+    position: absolute;
+    margin-left: 400px;
+    text-align: center;
+    font-size: larger;
+    top: 550px;
+    text-shadow:0 0 30px #32CD32,5px 9px 5px rgba(0, 0, 0, 0.5), 0 0 150px #32CD32;color:white;
+    background-color: rgb(0,0,0,.4);
+    border-radius: 10px;
+}
+
+.imageos{
+    width: 270px;
+    height: 170px;
+    margin-left: -1500px;
+    margin-top: 380px;
+}
 
