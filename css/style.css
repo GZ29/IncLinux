@@ -1234,3 +1234,71 @@ caption {
     background-color: rgb(0,0,0,.4);
     border-radius: 10px;
 }
+
+.webo{
+  width: 50%;
+  min-height: 9%;
+  line-height:30px;
+  display:flex;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: larger;
+  top:23%;
+  text-shadow:0 0 30px #32CD32,5px 9px 5px rgba(0, 0, 0, 0.5), 0 0 150px #32CD32;color:white;
+  background-color: rgb(0,0,0,.4);
+  border-radius: 10px;
+}
+
+
+.webo1{
+  width: 60%;
+  min-height: 13%;
+  line-height:30px;
+  display:flex;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: larger;
+  top:35%;
+  text-shadow:0 0 30px #32CD32,5px 9px 5px rgba(0, 0, 0, 0.5), 0 0 150px #32CD32;color:white;
+  background-color: rgb(0,0,0,.4);
+  border-radius: 10px;
+}
+
+
+.webo2{
+  width: 45%;
+  min-height: 9%;
+  line-height:30px;
+  display:flex;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: larger;
+  top:51%;
+  text-shadow:0 0 30px #32CD32,5px 9px 5px rgba(0, 0, 0, 0.5), 0 0 150px #32CD32;color:white;
+  background-color: rgb(0,0,0,.4);
+  border-radius: 10px;
+}
+
+
+
+.webo3{
+  width: 45%;
+  min-height: 9%;
+  line-height:30px;
+  display:flex;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: larger;
+  top:63%;
+  text-shadow:0 0 30px #32CD32,5px 9px 5px rgba(0, 0, 0, 0.5), 0 0 150px #32CD32;color:white;
+  background-color: rgb(0,0,0,.4);
+  border-radius: 10px;
+}
